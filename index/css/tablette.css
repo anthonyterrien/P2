@@ -1,0 +1,221 @@
+body {
+    font-family: Raleway, serif;
+    margin: 0;
+    width: auto;
+}
+
+
+/*    <header>     */
+
+
+#Logo_Booki {
+    padding: 20px 10px 10px 50px;
+    width:140px;
+    height:auto;
+}
+
+
+/*    </header>     */
+
+
+/*    <main>     */
+
+
+#search_logo {
+    display: none;
+}
+
+
+/*    </main>     */
+
+
+/*    <section>     */
+/*    <nav>     */
+
+
+.article {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+
+.main_center h1 {
+    font-size: 25px;
+}
+
+.lodging_container {
+    padding: 20px 50px;
+    margin: 0 0 55px;
+    background-color: white;
+}
+
+.title_lodging_container {
+    font-size: 35px;
+    padding-bottom: 55px;
+}
+
+.lodging_card {
+    font-size: 20px;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px;
+
+}
+
+.storage_card_lodging {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.picture_lodging_phone {
+    display: block;
+    border-radius: 25px 25px 0 0;
+    height: auto;
+    width: 100%
+}
+
+.lodging_name {
+    font-size: 25px;
+    margin: 10px 0 5px 10px;
+}
+
+.lodging_night_price {
+    font-size: 20px;
+    margin: 5px 0 10px 10px;
+}
+
+.star_lodging {
+    margin: 5px 0 10px 10px;
+    font-size: 26px;
+}
+
+.picture_lodging {
+    display: none;
+}
+
+.show_more {
+    margin-left: 0;
+}
+
+
+/*    </nav>     */
+/*    <nav>     */
+
+
+.most_popular_container {
+    margin: 0;
+    border-radius: 0;
+    padding: 0 50px 25px;
+}
+
+.title_popular_container {
+    font-size: 35px;
+    margin: 30px;
+}
+
+.storage_card_popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular_card {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    padding: 8px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 30px 0;
+}
+
+.center {
+    margin-left: 10%;
+    /*font-size: 20%;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popular_name {
+    margin: 0;
+    font-size: 30px;
+}
+
+.popular_night_price {
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+.picture_popular {
+    border-radius: 30px 0 0 30px;
+    height: auto;
+}
+
+.star_popular {
+    margin-top: 125px;
+    font-size: 26px;
+}
+
+
+/*    </nav>     */
+/*    </section>     */
+
+
+/*    <section>     */
+
+.bloc_colored {
+    justify-content: center;
+}
+
+.picture_activity {
+    display: none;
+}
+.picture_activity_phone {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
+}
+
+.activity_center {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 50px 24px;
+}
+.activity_container {
+    display: flex;
+    justify-content: center;
+}
+.activity_container_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.activity_card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*    </section>     */
+.storage_card_activity {
+    display: flex;
+    flex-direction: column;
+}
+.activity_name {
+    font-size: 2vw;
+}
+.title_activity h3 {
+    margin-left: 0;
+}

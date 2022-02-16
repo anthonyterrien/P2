@@ -1,13 +1,10 @@
 body {
     font-family: Raleway, serif;
     margin: 0;
-    width: 1900px;
 }
 
 html {
-    width: auto;
 }
-
 
 /*    <header>     */
 
@@ -38,6 +35,25 @@ html {
     display: inline;
     text-align: right;
 }
+.right_link:hover #link_line_Color_1 {
+    background-color: #0065FC;
+}
+.right_link:hover #color_txt_1 {
+    color: #0065FC;
+}
+
+
+.right_link_2 {
+    display: inline;
+    text-align: right;
+}
+.right_link_2:hover #link_line_Color_2 {
+    background-color: #0065FC;
+}
+.right_link_2:hover #color_txt_2 {
+    color: #0065FC;
+}
+
 
 .link_line_top {
     width: 204px;
@@ -45,7 +61,7 @@ html {
 }
 
 #link_line_Color_1 {
-    background-color: #0065FC;
+    background-color: white;
 }
 
 #link_line_Color_2 {
@@ -60,7 +76,7 @@ html {
 }
 
 #color_txt_1 {
-    color: #0065FC;
+    color: black;
 }
 
 #color_txt_2 {
@@ -80,8 +96,12 @@ html {
     padding: 130px 0 30px 55px ;
 }
 
+.main_center h1 {
+    font-size: 28px;
+}
+
 #subtitle {
-    font-size: 20px;
+    font-size: 18px;
     margin: -10px 0 30px 0;
 }
 
@@ -92,7 +112,7 @@ html {
 .city_selection {
     background-color: #F2F2F2;
     width: 60px;
-    height: 65px;
+    height: 60px;
     border-radius: 20px 0 0 20px;
     display: flex;
     justify-content: space-between;
@@ -106,14 +126,14 @@ html {
 
 input{
     width: 250px;
-    height: 65px;
+    height: 60px;
     font-size: 22px;
     border: 2px solid #F2F2F2;
 }
 
 .search_button {
     width: 170px;
-    height: 65px;
+    height: 60px;
     font-size: 22px;
     border-radius: 0 20px 20px 0;
     background-color: #0065FC;
@@ -125,7 +145,8 @@ input{
 #search_button_txt {
     display: block;
     color: white;
-    margin-left: 25px
+    margin-left: 25px;
+    font-size: 20px;
 }
 
 .search_logo {
@@ -232,7 +253,7 @@ input{
     display: flex;
     width: auto;
 }
-/*star color*/
+
 .blue {
     color:  #0065FC
 }
@@ -242,28 +263,28 @@ input{
 }
 
 .lodging_container {
+    width: 80%;
     margin: 0 25px 0 55px;
 }
 
 .bloc_colored {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     background-color: #F2F2F2;
     border-radius: 20px;
     height: auto;
-    padding: 0 55px 20px 55px;
+    padding: 0 45px 20px;
 }
 
-.title_lodging_container {
+.title_lodging_container h3 {
     font-size: 25px;
-    margin: 25px 0 -90px 0;
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .storage_card_lodging {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 a {
@@ -272,13 +293,17 @@ a {
 }
 
 .lodging_card {
-    font-size: 20px;
-    width: 315px;
-    height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    font-size: 100%;
+    width: 30%;
     background-color: white;
     border-radius: 25px;
-    margin: 0;
-    padding: 6px;
+    margin: 0 0 3%;
+    padding: 6px 6px 16px;
+
 }
 
 .box_shadow {
@@ -292,8 +317,9 @@ a {
 
 .picture_lodging {
     border-radius: 20px 20px 0 0;
-    height: 140px;
-    width:100%
+    aspect-ratio: 16/8;
+    width: 100%;
+    height: auto;
 }
 
 .picture_lodging_phone {
@@ -313,12 +339,10 @@ a {
 .star_lodging {
     display: flex;
     margin: 5px 0 0 10px;
-    font-size: 16px;
 }
 
 .show_more {
     font-size: 25px;
-    margin: 20px 0 -50px 0;
 }
 
 
@@ -329,29 +353,35 @@ a {
 .most_popular_container {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 30%;
     align-content: center;
     margin: 0 55px 0 25px;
 }
 
 .title_popular_container {
-    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 0 -15px 0;
+    margin-top: 13.34%;
+    margin-bottom: 2.68%;
+}
+
+.title_popular_container h3 {
+    font-size: 25px;
+    margin: 0;
 }
 
 .title_popular_container i {
+    font-size: 25px;
     color: black;
 }
 
 .popular_card {
-    font-size: 20px;
+    font-size: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 445px;
-    height: 185px;
+    width: 97%;
+    height: auto;
     padding: 6px;
     background-color: white;
     border-radius: 25px;
@@ -368,13 +398,15 @@ a {
 
 .picture_popular {
     border-radius: 20px 0 0 20px;
-    height: 185px;
-    width: 165px
+    height: auto;
+    width: 45%;
 }
 
 
 .center {
-    margin: 15px 0 15px 28px;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 2% 5%;
 }
 
 .popular_name {
@@ -387,14 +419,15 @@ a {
 
 .star_popular {
     display: flex;
-    margin-top: 55px;
-    font-size: 16px;
+    margin-top: auto;
+
 }
 
 
 
 /*    </nav>     */
 /*    </section>     */
+
 
 
 /*    <section>     */
@@ -408,45 +441,54 @@ a {
     padding: 55px 30px 24px;
 }
 
-.title_activity {
+.title_activity h3 {
     font-size: 25px;
+    margin-left: 30px;
 }
 
-.margin_left {
-    margin-left: 30px;
+.storage_card_activity {
+    display: flex;
 }
 
 .activity_container {
     display: flex;
+    justify-content: center;
+}
+.activity_container_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
+.height_card_1 {
+    height: 100%;
+}
+.height_card_2 {
+    height: 56%;
+}
+.height_card_3 {
+    height: 38%;
+}
+
 .activity_card {
-    font-size: 20px;
-    width: auto;
-    height: auto;
     background-color: white;
     border-radius: 20px;
-}
-
-.margin_right {
-    margin-right: 30px;
-}
-
-.margin_top {
-    margin-top: 48px;
+    font-size: 20px;
+    width: 90%;
 }
 
 .picture_activity {
     display: block;
     border-radius: 20px 20px 0 0;
-    height: 100%;
+    height: auto;
     width: 100%
 }
 
 .activity_name {
     margin: 16px 0 10px 20px;
     padding-bottom: 16px;
+    font-size: 1.2vw;
 }
 
 .picture_activity_phone {
@@ -479,615 +521,43 @@ footer {
 
 /*    </footer>    */
 
-
-
-
-
-@media screen and (max-width: 992px) {
-
-    body {
-        font-family: Raleway, serif;
-        margin: 0;
-        width: auto;
+@media screen and (max-width: 1516px) {
+    .popular_card {
+        font-size: 90%;
     }
-
-
-    /*    <header>     */
-
-
-    #Logo_Booki {
-        padding: 20px 10px 10px 50px;
-        width:140px;
-        height:auto;
+    .lodging_card {
+        font-size: 90%;
     }
-
-
-    /*    </header>     */
-
-
-    /*    <main>     */
-
-
-    #search_logo {
-        display: none;
-    }
-
-
-    /*    </main>     */
-
-
-    /*    <section>     */
-    /*    <nav>     */
-
-
+    /*.activity_name {*/
+    /*    font-size: 90%;*/
+    /*}*/
+}
+@media screen and (max-width: 1400px) {
     .article {
         display: flex;
         flex-direction: column-reverse;
-        flex-wrap: nowrap;
     }
-
-    .lodging_container {
-        margin: 0 0 55px;
-        background-color: white;
-    }
-
-    .title_lodging_container {
-        font-size: 35px;
-        padding-bottom: 55px;
-    }
-
-    .lodging_card {
-        font-size: 20px;
-        width: 600px;
-        height: 480px;
-        background-color: white;
-        border-radius: 25px;
-        margin: 30px;
-        padding: 8px;
-    }
-
-    .storage_card_lodging {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .picture_lodging {
-        border-radius: 20px 20px 0 0;
-        height: 360px;
-        width: 100%
-    }
-
-    .lodging_name {
-        font-size: 25px;
-        margin: 10px 0 5px 10px;
-    }
-
-    .lodging_night_price {
-        font-size: 20px;
-        margin: 5px 0 10px 10px;
-    }
-
-    .star_lodging {
-        margin: 5px 0 0 10px;
-        font-size: 26px;
-    }
-
-    .picture_lodging_phone {
-        display: none;
-    }
-
-    .show_more {
-        margin-left: 0;
-    }
-
-
-    /*    </nav>     */
-    /*    <nav>     */
-
-
     .most_popular_container {
-        margin: 0 20px 0 20px;
-    }
-
-    .title_popular_container {
-        font-size: 35px;
-        margin: 30px 30px 0 30px;
-    }
-
-    .popular_card {
-        font-size: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 750px;
-        height: auto;
-        padding: 8px;
-        background-color: white;
-        border-radius: 25px;
-        margin: 30px;
-    }
-
-    .center {
-        margin-left: 95px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .popular_name {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    .popular_night_price {
-        margin-top: 45px;
-        font-size: 20px;
-    }
-
-    .picture_popular {
-        border-radius: 20px 0 0 20px;
-        height: 350px;
-        width: auto
-    }
-
-    .star_popular {
-        margin-top: 125px;
-        font-size: 26px;
-    }
-
-
-    /*    </nav>     */
-    /*    </section>     */
-
-
-    /*    <section>     */
-
-    .bloc_colored {
-        justify-content: center;
-    }
-
-    .activity_center {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 24px 30px;
-        margin: 0 auto;
-    }
-
-    .margin_left {
-        margin-left: 0;
-    }
-
-    .title_activity {
-        font-size: 35px;
-    }
-
-    .activity_container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .activity_card {
-        font-size: 20px;
         width: auto;
-        height: auto;
-        background-color: white;
-        border-radius: 20px;
-    }
-
-    .margin_right {
-        margin-right: 0;
-    }
-
-    .margin_top_tablet {
-        margin-top: 57px;
-    }
-
-    .margin_top {
-        margin-top: 57px;
-    }
-
-    .picture_activity {
-        display: block;
-        border-radius: 20px 20px 0 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    .container {
-        display: flex;
         flex-direction: column;
+        margin: 0 55px 55px 55px;
+        padding: 0 45px 25px;
     }
-
-    .picture_activity_phone {
-        display: none;
-    }
-
-
-    /*    </section>     */
-
-}
-
-
-
-@media screen and (max-device-width: 768px) {
-
-
-    /*    <header>     */
-
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sticky {
-        position: static;
-        top: 0;
-        width: 100%
-    }
-
-    #Logo_Booki {
-        width:250px;
-        height:auto;
-        padding: 100px 0 35px 55px;
-    }
-
-    .right_header {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .right_link {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-
-    #color_txt_2 {
-        padding-bottom: 30px;
-        color: black;
-        font-size: 40px;
-    }
-
-    #color_txt_1 {
-        padding-bottom: 30px;
-        font-size: 40px;
-        color: #0065FC
-    }
-
-    .link_line_top {
-        width: 100%;
-        height: 8px;
-    }
-
-    #link_line_Color_2 {
-        background-color: #F2F2F2;
-    }
-
-    .link_txt_right {
-        display: flex;
-        justify-content: center;
-        margin: 40px 0 0 0;
-        font-size: 1.2em;
-    }
-
-
-    /*    </header>     */
-
-
-    /*    <main>     */
-
-
-    h1 {
-        font-size: 60px;
-    }
-
-    .main_center {
-        padding: 50px;
-    }
-
-    #subtitle {
-        font-size: 40px;
-        margin-bottom: 75px
-    }
-
-    .search_bar_container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .city_selection {
-        background-color: #F2F2F2;
-        width: 130px;
-        height: 130px;
-        border-radius: 35px 0 0 35px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    input{
-        width: 655px;
-        height: 130px;
-        font-size: 40px;
-        border: 3px solid #F2F2F2;
-    }
-
-    .search_button {
-        width: 130px;
-        height: 130px;
-        font-size: 22px;
-        border-radius: 40px;
-        background-color: #0065FC;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: -35px;
-    }
-
-    #search_button_txt {
-        display: none;
-    }
-
-    .search_logo {
-        color: white;
-        display: block;
-        margin-left: 40px;
-        font-size: 40px;
-    }
-
-    .filtered_container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding-top: 20px;
-    }
-
-    .filtered_txt {
-        font-size: 40px;
-        margin: 0 420px 0 20px;
-    }
-
-    .card_filtered {
-        font-size: 40px;
-        display: flex;
-        width: auto;
-        height: 100px;
-        border-radius: 200px;
-        border: #d8d8d8 5px solid;
-        margin: 15px;
-        align-items: center;
-    }
-
-    .round {
-        height: 110px;
-        width: 110px;
-        font-size: 40px;
-    }
-
-    .I_container {
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-        font-size: 35px;
-    }
-
-    .pin_logo {
-        margin-left: 50px;
-        font-size: 45px;
-    }
-
-    .round_info {
-        margin-right: 10px;
-        height: 50px;
-        width: 50px;
-        border: #F2F2F2 3px solid;
-        font-size: 25px;
-    }
-
-
-    /*    </main>     */
-
-
-    /*    <section>     */
-    /*    <nav>     */
-
-
     .lodging_container {
-        margin: 0 0 0 0;
-    }
-
-    .bloc_colored {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        border-radius: 0;
-        height: auto;
-    }
-
-    .title_lodging_container {
-        font-size: 58px;
-        padding-bottom: 50px;
-        padding-top: 60px;
-        margin-left: 15px;
-    }
-
-    .lodging_card {
-        font-size: 35px;
         width: auto;
-        height: auto;
-        background-color: white;
-        border-radius: 50px;
-        padding: 8px;
-        margin: 35px 15px 0 15px;
+        margin: 0 55px 0 55px;
     }
-
-    .picture_lodging {
-        display: none;
-    }
-
-    .picture_lodging_phone {
-        display: block;
-        border-radius: 50px 50px 0 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    .lodging_name {
-        margin: 20px 0 0 25px;
-        font-size: 40px;
-    }
-
-    .lodging_night_price {
-        margin-left: 25px;
-        font-size: 30px;
-    }
-
-    .star_lodging {
-        margin: 20px 0 20px 25px;
-        font-size: 27px;
-    }
-
-    .show_more {
-        font-size: 50px;
-        margin: 55px 0 0 15px;
-    }
-
-
-    /*    </nav>     */
-    /*    <nav>     */
-
-
-    .most_popular_container {
-        margin: 0 0 0 0;
-        padding-bottom: 60px;
-    }
-
-    .title_popular_container {
-        font-size: 58px;
+    .storage_card_popular {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        margin: 0 30px 0 30px;
     }
-
     .popular_card {
-        font-size: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 820px;
-        height: 350px;
-        padding: 8px;
-        background-color: white;
-        border-radius: 40px;
-        margin: 30px 15px 30px 15px;
+        width: 30%;
+        font-size: 75%;
     }
-
-    .picture_popular {
-        display: block;
-        border-radius: 40px 0 0 40px;
-        height: 350px;
-        width: auto;
+    .title_popular_container {
+        margin-top: 5%;
+        margin-bottom: 1%;
     }
-
-    .popular_name {
-        margin: 0;
-        font-size: 40px;
-    }
-
-    .popular_night_price {
-        margin-top: 45px;
-        font-size: 30px;
-    }
-
-    .center {
-        display: flex;
-        align-items: flex-start;
-        font-size: 35px;
-        margin: 35px;
-    }
-
-    .star_popular {
-        margin-top: 50px;
-        font-size: 27px;
-    }
-
-
-    /*    </nav>     */
-    /*    </section>     */
-
-
-    /*    <section>     */
-
-
-    .activity_center {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 100px 50px;
-        margin: 0 auto;
-    }
-
-    .title_activity {
-        font-size: 50px;
-        margin-left: -300px;
-    }
-
-    .activity_container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .activity_card {
-        font-size: 20px;
-        width: auto;
-        height: auto;
-        background-color: white;
-        border-radius: 50px;
-    }
-
-    .picture_activity {
-        display: none;
-    }
-
-    .picture_activity_phone {
-        display: block;
-        border-radius: 50px 50px 0 0;
-        height: 100%;
-        width: 100%
-    }
-
-    .activity_name {
-        margin: 30px 0 10px 50px;
-        padding-bottom: 30px;
-        font-size: 40px;
-    }
-
-
-    /*    </section>     */
-
-
-    /*    <footer>    */
-
-
-    footer {
-        font-size: 40px;
-        background-color: #F2F2F2;
-        margin-top:35px;
-    }
-
-    .footer_center {
-        padding: 24px 50px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    /*    </footer>    */
-
 }
