@@ -15,25 +15,29 @@
 </head>
 <body>
 <header>
-    <div class="header" id="sticky">
+    <div class="header " id="sticky">
         <img src="./image/logo/Booki.png"
-             alt="logo Booki" id="Logo_Booki"/>
-        <div class="right_header">
-            <a href="#lodging" class="right_link">
-                <div class="link_line_top" id="link_line_Color_1"></div>
-                    <p class="link_txt_right" id="color_txt_1">Hébergements</p>
-            </a>
-            <a href="#activity" class="right_link_2">
-                <div class="link_line_top" id="link_line_Color_2"></div>
-                <p class="link_txt_right" id="color_txt_2">Activités</p>
-            </a>
-        </div>
+             alt="logo Booki" class="Logo_Booki"/>
+        <nav class="right_header">
+            <ul class="ul_organise" >
+                <li class="change_color_lodging li_organise" >
+                    <svg class="line_top color_lodging"  ><rect height="5" width="200" /></svg>
+                    <a href="#lodging" class="right_link color_lodging">Hébergements</a>
+                </li>
+            </ul>
+            <ul class="ul_organise" >
+                <li class="change_color_activity li_organise" >
+                    <svg class="line_top color_activity" ><rect height="5" width="200" /></svg>
+                    <a href="#activity" class="right_link color_activity">Activités</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main>
     <div class="main_center">
-        <h1 id="title" >Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p id="subtitle">En plein centre ville ou en pleine nature</p>
+        <h1 class="title" >Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="subtitle">En plein centre ville ou en pleine nature</p>
         <div class="search_bar_container">
             <div class="city_selection">
                 <div class="pin_logo">
@@ -46,7 +50,7 @@
                 </label>
             </form>
             <div class="search_button">
-                <h4 id="search_button_txt">Rechercher</h4>
+                <h4 class="search_button_txt">Rechercher</h4>
                 <div class="search_logo">
                     <i class="fas fa-search"></i>
                 </div>
@@ -56,25 +60,25 @@
             <div class="filtered_txt">
                 <p id="lodging"><strong>Filtres</strong></p>
             </div>
-            <div class="card_filtered card_hover card_active">
+            <div class="card_filtered card_active">
                 <div class="round">
                     <i class="fas fa-money-bill-wave"></i>
                 </div>
                 <p class="filtered_text_in_card"><strong>Économique</strong></p>
             </div>
-            <div class="card_filtered card_hover card_active">
+            <div class="card_filtered card_active">
                 <div class="round">
                     <i class="fas fa-child"></i>
                 </div>
                 <p class="filtered_text_in_card"><strong>Familial</strong></p>
             </div>
-            <div class="card_filtered card_hover card_active">
+            <div class="card_filtered card_active">
                 <div class="round">
                     <i class="fas fa-heart"></i>
                 </div>
                 <p class="filtered_text_in_card"><strong>Romantique</strong></p>
             </div>
-            <div class="card_filtered card_hover card_active">
+            <div class="card_filtered card_active">
                 <div class="round">
                     <i class="fas fa-dog"></i>
                 </div>
@@ -89,8 +93,8 @@
         </div>
     </div>
 </main>
-<div class="article">
-    <nav class="lodging_container bloc_colored">
+<section>
+    <article class="lodging_container bloc_colored">
         <div class="title_lodging_container">
             <h3>Hébergements à Marseille</h3>
         </div>
@@ -199,8 +203,8 @@
             </div>
         </div>
         <p id="activity" class="show_more"><strong>Afficher plus</strong></p>
-    </nav>
-    <nav class="most_popular_container bloc_colored">
+    </article>
+    <aside class="most_popular_container bloc_colored">
         <div class="title_popular_container">
             <h3>Les plus populaires</h3>
             <i class="fas fa-chart-line"></i>
@@ -252,16 +256,16 @@
                 </div>
             </a>
         </div>
-    </nav>
-</div>
-<div class="article">
+    </aside>
+</section>
+<section>
     <div class="activity_center">
         <div class="title_activity">
             <h3>Activités à Marseille</h3>
         </div>
-        <nav class="storage_card_activity">
+        <div class="storage_card_activity">
             <div class="activity_container">
-                <a href="#" class="height_card_1 box_shadow card_hover activity_card">
+                <a href="#" class="height_card_large box_shadow card_hover activity_card">
                     <img src="./image/activités/vieux_port.jpg"
                          alt="vieux port" class="picture_activity">
                     <img src="./image/activités/mobile/vieux_port_mobile.jpg"
@@ -269,15 +273,15 @@
                     <h4 class="activity_name"><b>Vieux port</b></h4>
                 </a>
             </div>
-            <div class="activity_container_1">
-                <a href="#" class="height_card_2 box_shadow card_hover activity_card">
+            <div class="activity_container_superimpose">
+                <a href="#" class="height_card_medium box_shadow card_hover activity_card">
                     <img src="./image/activités/fort_de_pomègues.jpg"
                          alt="fort de pomègues" class="picture_activity">
                     <img src="./image/activités/mobile/fort_de_pomègues_mobile.jpg"
                          alt="fort de pomègues" class="picture_activity_phone">
                     <h4 class="activity_name"><b>Fort de Pomègues</b></h4>
                 </a>
-                <a href="#" class="height_card_3 box_shadow card_hover activity_card">
+                <a href="#" class="height_card_big box_shadow card_hover activity_card">
                     <img src="./image/activités/îles_du_frioul.jpg"
                          alt="îles du frioul" class="picture_activity">
                     <img src="./image/activités/mobile/îles_du_frioul_mobile.jpg"
@@ -286,7 +290,7 @@
                 </a>
             </div>
             <div class="activity_container">
-                <a href="#" class="height_card_1 box_shadow card_hover activity_card">
+                <a href="#" class="height_card_large box_shadow card_hover activity_card">
                     <img src="./image/activités/parc_national_des_calanques.jpg"
                          alt="parc national des calanques" class="picture_activity">
                     <img src="./image/activités/mobile/parc_national_des_calanques_mobile.jpg"
@@ -294,15 +298,15 @@
                     <h4 class="activity_name"><b>Parc National des Calanques</b></h4>
                 </a>
             </div>
-            <div class="activity_container_1">
-                <a href="#" class="height_card_3 box_shadow card_hover activity_card">
+            <div class="activity_container_superimpose">
+                <a href="#" class="height_card_big box_shadow card_hover activity_card">
                     <img src="./image/activités/notre_dame_de_la_garde.jpg"
                          alt="notre dame de la garde" class="picture_activity">
                     <img src="./image/activités/mobile/notre_dame_de_la_garde_mobile.jpg"
                          alt="notre dame de la garde" class="picture_activity_phone">
                     <h4 class="activity_name"><b>Notre-Dame-de-la-Garde</b></h4>
                 </a>
-                <a href="#" class="height_card_2 box_shadow card_hover activity_card">
+                <a href="#" class="height_card_medium box_shadow card_hover activity_card">
                     <img src="./image/activités/parc_longchamp.jpg"
                          alt="parc longchamp" class="picture_activity">
                     <img src="./image/activités/mobile/parc_longchamp_mobile.jpg"
@@ -310,28 +314,28 @@
                     <h4 class="activity_name"><b>Parc Longchamp</b></h4>
                 </a>
             </div>
-        </nav>
+        </div>
     </div>
-</div>
+</section>
 <footer>
-    <div class="footer_center">
-        <div class="footer_item">
-            <h3>A propos</h3>
-            <p>Fonctionnement du site</p>
-            <p>Condition générales de vente</p>
-            <p>Données et confidentialité</p>
-        </div>
-        <div class="footer_item">
-            <h3>Nos hébergements</h3>
-            <p>Charte qualité</p>
-            <p>Soumettre votre hôtel</p>
-        </div>
-        <div class="footer_item">
-            <h3>Assistance</h3>
-            <p>Centre d'aide</p>
-            <p>Nons contacter</p>
-        </div>
-    </div>
+    <nav class="footer_center">
+        <ul class="footer_item">
+            <li class="footer_title">A propos</li>
+            <li>Fonctionnement du site</li>
+            <li>Condition générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
+        <ul class="footer_item">
+            <li class="footer_title">Nos hébergements</li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
+        <ul class="footer_item">
+            <li class="footer_title">Assistance</li>
+            <li>Centre d'aide</li>
+            <li>Nons contacter</li>
+        </ul>
+    </nav>
 </footer>
 </body>
 </html>

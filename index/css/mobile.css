@@ -1,3 +1,6 @@
+/*    <header>     */
+
+
 .header {
     display: flex;
     flex-direction: column;
@@ -10,7 +13,7 @@
     width: 100%
 }
 
-#Logo_Booki {
+.Logo_Booki {
     width: 30%;
     height: auto;
     padding: 5% 0 5% 9%;
@@ -22,36 +25,39 @@
     width: 100%;
 }
 
-.right_link {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 50%;
-}
-.right_link_2 {
+.right_link_lodging {
     display: flex;
     flex-direction: column-reverse;
     width: 50%;
 }
 
-#color_txt_2 {
-    padding-bottom: 20px;
-    color: black;
-    font-size: 18px;
+.right_link_activity {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
 }
 
-#color_txt_1 {
+.right_link_activity {
+    color: black;
+    font-size: 5vw;
+}
+
+.color_txt_lodging {
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 5vw;
     color: black;
 }
+
 .link_line_top {
     width: 100%;
     height: 5px;
 }
-#link_line_Color_1 {
+
+.link_line_Color_lodging {
     background-color: rgba(234, 234, 234, 0.20);
 }
-#link_line_Color_2 {
+
+.link_line_Color_activity {
     background-color: rgba(234, 234, 234, 0.20);
 }
 
@@ -59,16 +65,26 @@
     display: flex;
     justify-content: center;
     margin-top: 10%;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
+    padding-bottom: 20px;
 }
+
+
+/*    </header>     */
+
+
+/*    <main>     */
+
 
 .main_center {
     padding: 25px;
 }
-#title {
+
+.title {
     font-size: 25px;
 }
-#subtitle {
+
+.subtitle {
     font-size: 15px;
 }
 
@@ -87,7 +103,7 @@
     align-items: center;
 }
 
-input{
+input {
     width: 100%;
     height: 60px;
     font-size: 20px;
@@ -106,7 +122,7 @@ input{
     margin-left: -35px;
 }
 
-#search_button_txt {
+.search_button_txt {
     display: none;
 }
 
@@ -116,12 +132,6 @@ input{
     margin-left: 21px;
     font-size: 22px;
 }
-.footer_center {
-    flex-direction: column;
-    padding: 24px 25px;
-}
-
-
 
 .filtered_container {
     display: flex;
@@ -172,22 +182,20 @@ input{
     margin: 0 10px;
 }
 
-.activity_card {
-    width: 100%;
-    margin: 15px 0;
-}
-.title_activity h3 {
-    font-size: 5.5vw;
-    margin-left: 0;
-}
-.activity_center {
-    padding: 0 25px 30px;
-}
+
+/*    </main>     */
+
+
+/*    <div class="article">     */
+/*    <nav class="lodging_container bloc_colored">     */
+
+
 .lodging_container {
     padding: 20px 25px;
     margin: 0 0 0 0;
     background-color: white;
 }
+
 .lodging_card {
     font-size: 20px;
     width: 100%;
@@ -197,37 +205,102 @@ input{
     padding: 8px;
     margin: 15px 0;
 }
-.most_popular_container {
-    padding: 55px 25px 30px;
-}
-.title_popular_container {
-   margin: 0;
-    font-size: 5.5vw;
-}
-.title_popular_container h3 {
-    font-size: 5.5vw;
-}
-.title_lodging_container h3 {
-    font-size: 5.5vw;
-}
-.activity_name {
-    font-size: 5vw;
-}
-.show_more {
-    font-size: 4vw;
-}
-.lodging_name {
-    font-size: 5vw;
-}
-.lodging_night_price {
-    font-size: 4.5vw;
-}
+
 .star_lodging {
     font-size: 4vw;
 }
+
 .title_lodging_container {
     font-size: 5vw;
     padding-bottom: 0;
 }
 
+.title_lodging_container h3 {
+    font-size: 5.5vw;
+}
 
+.lodging_name {
+    font-size: 5vw;
+}
+
+.lodging_night_price {
+    font-size: 4.5vw;
+}
+
+.show_more {
+    font-size: 4vw;
+}
+
+
+/*    </nav>     */
+/*    <nav class="most_popular_container bloc_colored">     */
+
+
+.most_popular_container {
+    padding: 55px 25px 30px;
+}
+
+.title_popular_container {
+    margin: 0;
+    font-size: 5.5vw;
+}
+
+.title_popular_container h3 {
+    font-size: 5.5vw;
+}
+
+.picture_popular {
+    aspect-ratio: 8/9;
+}
+
+.popular_card {
+    width: 97%;
+    min-height: 120px;
+}
+
+.popular_name {
+    font-size: 4vw;
+}
+
+.popular_night_price {
+    font-size: 3.5vw;
+}
+
+.star_popular {
+    font-size: 3.5vw;
+}
+
+
+/*    </nav>     */
+/*    <div class="article">     */
+
+
+.activity_center {
+    padding: 0 25px 30px;
+}
+
+.title_activity h3 {
+    font-size: 5.5vw;
+    margin-left: 0;
+}
+
+.activity_name {
+    font-size: 5vw;
+}
+
+.activity_card {
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+/*    </div>     */
+/*    <footer>    */
+
+
+.footer_center {
+    flex-direction: column;
+    padding: 24px 25px;
+}
+
+/*    </footer>    */

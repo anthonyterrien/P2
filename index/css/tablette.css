@@ -8,10 +8,10 @@ body {
 /*    <header>     */
 
 
-#Logo_Booki {
+.Logo_Booki {
     padding: 20px 10px 10px 50px;
-    width:140px;
-    height:auto;
+    width: 140px;
+    height: auto;
 }
 
 
@@ -21,7 +21,7 @@ body {
 /*    <main>     */
 
 
-#search_logo {
+.search_logo {
     display: none;
 }
 
@@ -29,18 +29,14 @@ body {
 /*    </main>     */
 
 
-/*    <section>     */
-/*    <nav>     */
+/*    <div class="article">     */
+/*    <nav class="lodging_container bloc_colored">     */
 
 
 .article {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-}
-
-.main_center h1 {
-    font-size: 25px;
 }
 
 .lodging_container {
@@ -61,7 +57,6 @@ body {
     background-color: white;
     border-radius: 25px;
     padding: 8px;
-
 }
 
 .storage_card_lodging {
@@ -102,8 +97,12 @@ body {
 
 
 /*    </nav>     */
-/*    <nav>     */
+/*    <nav class="most_popular_container bloc_colored">     */
 
+
+.bloc_colored {
+    justify-content: center;
+}
 
 .most_popular_container {
     margin: 0;
@@ -137,7 +136,6 @@ body {
 
 .center {
     margin-left: 10%;
-    /*font-size: 20%;*/
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -154,8 +152,7 @@ body {
 }
 
 .picture_popular {
-    border-radius: 30px 0 0 30px;
-    height: auto;
+    aspect-ratio: 16/8;
 }
 
 .star_popular {
@@ -165,18 +162,13 @@ body {
 
 
 /*    </nav>     */
-/*    </section>     */
+/*    <div class="article">     */
 
-
-/*    <section>     */
-
-.bloc_colored {
-    justify-content: center;
-}
 
 .picture_activity {
     display: none;
 }
+
 .picture_activity_phone {
     display: block;
     width: 100%;
@@ -189,16 +181,19 @@ body {
     flex-direction: column;
     padding: 55px 50px 24px;
 }
+
 .activity_container {
     display: flex;
     justify-content: center;
 }
-.activity_container_1 {
+
+.activity_container_superimpose {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
+
 .activity_card {
     display: flex;
     flex-direction: column;
@@ -208,14 +203,19 @@ body {
     margin-bottom: 25px;
     margin-top: 25px;
 }
-/*    </section>     */
+
 .storage_card_activity {
     display: flex;
     flex-direction: column;
 }
+
 .activity_name {
     font-size: 2vw;
 }
+
 .title_activity h3 {
     margin-left: 0;
 }
+
+
+/*    </div>     */
