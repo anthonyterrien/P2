@@ -1,24 +1,6 @@
-body {
-    font-family: Raleway, serif;
-    margin: 0;
-    width: auto;
-}
 
 
 /*    <header>     */
-
-
-.Logo_Booki {
-    padding: 20px 10px 10px 50px;
-    width: 140px;
-    height: auto;
-}
-
-
-/*    </header>     */
-
-
-/*    <main>     */
 
 
 .search_logo {
@@ -26,32 +8,40 @@ body {
 }
 
 
-/*    </main>     */
-
-
-/*    <div class="article">     */
+/*    </header>     */
 /*    <nav class="lodging_container bloc_colored">     */
 
 
-.article {
+section {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
 }
 
+
+/*    <article id="lodging" class="lodging_container bloc_colored">     */
+
+
 .lodging_container {
     padding: 20px 50px;
     margin: 0 0 55px;
     background-color: white;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.title_lodging_container {
-    font-size: 35px;
-    padding-bottom: 55px;
+.bloc_colored {
+    justify-content: center;
+}
+
+.title_lodging_container h3 {
+    font-size: 3vw;
+    padding-bottom: 10%;
 }
 
 .lodging_card {
-    font-size: 20px;
     width: 80%;
     height: auto;
     background-color: white;
@@ -73,18 +63,18 @@ body {
 }
 
 .lodging_name {
-    font-size: 25px;
+    font-size: 3vw;
     margin: 10px 0 5px 10px;
 }
 
 .lodging_night_price {
-    font-size: 20px;
+    font-size: 2.5vw;
     margin: 5px 0 10px 10px;
 }
 
 .star_lodging {
     margin: 5px 0 10px 10px;
-    font-size: 26px;
+    font-size: 3vw;
 }
 
 .picture_lodging {
@@ -92,34 +82,37 @@ body {
 }
 
 .show_more {
+    font-size: 3vw;
     margin-left: 0;
 }
 
 
-/*    </nav>     */
-/*    <nav class="most_popular_container bloc_colored">     */
+/*    </article>     */
+/*    <aside class="most_popular_container bloc_colored">     */
 
-
-.bloc_colored {
-    justify-content: center;
-}
 
 .most_popular_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     border-radius: 0;
     padding: 0 50px 25px;
+    width: auto;
 }
 
 .title_popular_container {
-    font-size: 35px;
-    margin: 30px;
+    font-size: 3vw;
+    margin: 5% 0 4%;
+    width: 80%;
 }
 
-.storage_card_popular {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.title_popular_container h3 {
+    font-size: 3vw;
+}
+
+.title_popular_container i {
+    font-size: 3vw;
 }
 
 .popular_card {
@@ -134,6 +127,13 @@ body {
     margin: 30px 0;
 }
 
+.storage_card_popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .center {
     margin-left: 10%;
     display: flex;
@@ -142,28 +142,44 @@ body {
 }
 
 .popular_name {
-    margin: 0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 .popular_night_price {
     margin-top: 45px;
-    font-size: 20px;
-}
-
-.picture_popular {
-    aspect-ratio: 16/8;
+    font-size: 2.5vw;
 }
 
 .star_popular {
-    margin-top: 125px;
-    font-size: 26px;
+    margin-top: 40%;
+    font-size: 3vw;
 }
 
 
-/*    </nav>     */
-/*    <div class="article">     */
+/*    </aside>     */
+/*    <section id="activity" class="activity_center">     */
 
+
+.activity_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 50px 24px;
+}
+
+.activity_center h3 {
+    font-size: 3vw;
+}
+
+.storage_card_activity {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity_container {
+    display: flex;
+    justify-content: center;
+}
 
 .picture_activity {
     display: none;
@@ -174,17 +190,6 @@ body {
     width: 100%;
     height: auto;
     border-radius: 25px 25px 0 0;
-}
-
-.activity_center {
-    display: flex;
-    flex-direction: column;
-    padding: 55px 50px 24px;
-}
-
-.activity_container {
-    display: flex;
-    justify-content: center;
 }
 
 .activity_container_superimpose {
@@ -204,18 +209,26 @@ body {
     margin-top: 25px;
 }
 
-.storage_card_activity {
-    display: flex;
-    flex-direction: column;
-}
-
 .activity_name {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .title_activity h3 {
-    margin-left: 0;
+    font-size: 3vw;
+    margin: 0 0 10%;
 }
 
 
-/*    </div>     */
+/*    </section>     */
+/*    <footer>    */
+
+
+footer {
+    font-size: 2vw;
+}
+.footer_center {
+    padding: 4% 5%;
+}
+
+
+/*    </footer>    */
