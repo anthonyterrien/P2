@@ -10,8 +10,8 @@
 }
 
 .Logo_Booki {
-    width: 30%;
-    padding: 5% 0 5% 9%;
+    width: 20%;
+    padding: 10% 0 5% 0;
 }
 
 .right_header {
@@ -19,17 +19,22 @@
     width: 100%;
 }
 
-.line_top {
-    width: 100%;
-    height: 5px;
+.change_color_activity {
+    border-bottom: #F2F2F2 5px solid;
 }
 
-.color_lodging {
-    fill: #F2F2F2;
+.change_color_lodging {
+    border-bottom: #F2F2F2 5px solid;
 }
 
-.color_activity {
-    fill: #F2F2F2;
+.change_color_activity:hover {
+    border-top: transparent;
+    border-bottom: #0065FC 5px solid;
+}
+
+.change_color_lodging:hover {
+    border-top: transparent;
+    border-bottom: #0065FC 5px solid;
 }
 
 .ul_organise {
@@ -220,7 +225,7 @@ input {
     font-size: 5.5vw;
 }
 
-.picture_lodging_phone {
+.picture_lodging {
     border-radius: 20px 20px 0 0;
 }
 
@@ -279,6 +284,23 @@ input {
     margin: 15px 0;;
 }
 
+.picture_activity {
+    height: 287px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 612px) {
+    .picture_activity {
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .picture_activity {
+        height: 163px;
+    }
+}
+
 
 /*    </section>     */
 /*    <footer>    */
@@ -289,7 +311,6 @@ footer {
 }
 
 .footer_center {
-    flex-direction: column;
     padding: 24px 25px;
 }
 

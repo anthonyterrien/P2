@@ -13,7 +13,7 @@ body {
 }
 
 .Logo_Booki {
-    width: 115px;
+    width: 80px;
     height: auto;
     padding: 55px 0 0 70px;
 }
@@ -28,11 +28,6 @@ body {
     margin: 0;
 }
 
-.change_color_lodging:hover .color_lodging {
-    fill: #0065FC;
-    color: #0065FC;
-}
-
 .li_organise {
     display: flex;
     flex-direction: column;
@@ -40,30 +35,43 @@ body {
     padding: 0;
     list-style-type: none;
     margin: 0;
+    width: 200px;
+}
+
+.change_color_lodging {
+    border-top: transparent 5px solid;
 }
 
 .color_lodging {
-    fill: transparent;
     color: black;
+}
+
+.change_color_lodging:hover {
+    border-top: #0065FC 5px solid;
+}
+
+.change_color_lodging:hover .color_lodging {
+    color: #0065FC;
+}
+
+.change_color_activity {
+    border-top: transparent 5px solid;
+}
+
+.color_activity {
+    color: black;
+}
+
+.change_color_activity:hover {
+    border-top: #0065FC 5px solid;
+}
+
+.change_color_activity:hover .color_activity {
+    color: #0065FC;
 }
 
 .right_link {
     margin-top: 35px;
-}
-
-.change_color_activity:hover .color_activity {
-    fill: #0065FC;
-    color: #0065FC;
-}
-
-.color_activity {
-    fill: transparent;
-    color: black;
-}
-
-.line_top {
-    width: 200px;
-    height: 5px;
 }
 
 .header_center {
@@ -224,6 +232,10 @@ input {
     }
 }
 @media screen and (max-width: 1325px) {
+    .li_organise {
+        font-size: 15px;
+    }
+
     .title {
         font-size: 22px;
     }
@@ -345,13 +357,8 @@ a {
 
 .picture_lodging {
     border-radius: 20px 20px 0 0;
-    aspect-ratio: 16/8;
     width: 100%;
     height: auto;
-}
-
-.picture_lodging_phone {
-    display: none;
 }
 
 .lodging_name {
@@ -474,6 +481,7 @@ a {
 .activity_container {
     display: flex;
     justify-content: center;
+    width: 25%;
 }
 
 .height_card_large {
@@ -490,12 +498,11 @@ a {
 .picture_activity {
     display: block;
     border-radius: 20px 20px 0 0;
-    height: auto;
     width: 100%
 }
 
-.picture_activity_phone {
-    display: none;
+.picture_activity_large {
+    height: 90%;
 }
 
 .activity_name {
@@ -509,14 +516,23 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 25%;
 }
 
 .height_card_medium {
     height: 56%;
 }
 
+.picture_activity_medium {
+    height: 82%;
+}
+
 .height_card_big {
     height: 38%;
+}
+
+.picture_activity_big {
+    height: 74%;
 }
 
 
@@ -536,6 +552,12 @@ footer {
     display: flex;
 }
 
+.footer_colum {
+    display: flex;
+    flex-direction: column;
+    margin-right: 22%;
+}
+
 .footer_item {
     list-style-type: none;
     flex-grow: 1;
@@ -550,8 +572,3 @@ footer li {
 
 
 /*    </footer>    */
-
-
-
-
-
