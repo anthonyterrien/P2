@@ -1,5 +1,3 @@
-
-
 /*    <header>     */
 
 
@@ -187,20 +185,20 @@ input {
 
 .title_lodging_container h3 {
     padding: 0;
-    margin: 30px 0 0 ;
+    margin: 30px 0 0;
     font-size: 5.5vw;
 }
 
 .lodging_name {
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .lodging_night_price {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 
 .show_more {
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 
 
@@ -218,11 +216,11 @@ input {
 }
 
 .title_popular_container h3 {
-    font-size: 5.5vw;
+    font-size: 5vw;
 }
 
 .title_popular_container i {
-    font-size: 5.5vw;
+    font-size: 5vw;
 }
 
 .picture_lodging {
@@ -252,6 +250,7 @@ input {
     margin-top: 40%;
     margin-bottom: 5%;
 }
+
 .center {
     align-items: start;
     margin-left: 5%;
@@ -265,49 +264,36 @@ input {
 .activity_center {
     padding: 0 25px 30px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .activity_center h3 {
-    font-size: 5.5vw;
+    font-size: 5vw;
     margin: 5% 0;
 }
 
 .activity_name {
     padding: 0;
     margin: 20px 0 20px 20px;
-    font-size: 5vw;
+    font-size: 4vw;
+}
+
+.picture_activity {
+    height: 280px;
 }
 
 .activity_card {
     width: 100%;
-    margin: 15px 0;;
+    margin: 15px 0;
+    height: 20%;
 }
-
-.picture_activity {
-    height: 287px;
-    object-fit: cover;
-}
-
-@media screen and (max-width: 612px) {
-    .picture_activity {
-        height: 225px;
-    }
-}
-
-@media screen and (max-width: 456px) {
-    .picture_activity {
-        height: 163px;
-    }
-}
-
 
 /*    </section>     */
 /*    <footer>    */
 
 
 footer {
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .footer_center {
@@ -316,3 +302,29 @@ footer {
 
 
 /*    </footer>    */
+
+
+@media screen and (max-width: 612px) {
+
+
+    /*    <section id="activity" class="activity_center">     */
+    .picture_activity {
+        height: 225px;
+    }
+
+
+    /*    </section>     */
+}
+
+
+@media screen and (max-width: 456px) {
+
+
+    /*    <section id="activity" class="activity_center">     */
+    .picture_activity {
+        height: 163px;
+    }
+
+
+    /*    </section>     */
+}
