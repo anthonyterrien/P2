@@ -45,32 +45,40 @@ section {
     background-color: white;
     border-radius: 25px;
     padding: 8px;
+    margin: 0 0 12%;
 }
 
 .storage_card_lodging {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.under_storage_lodging {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 
 .lodging_name {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 10px 0 5px 10px;
 }
 
 .lodging_night_price {
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 5px 0 10px 10px;
 }
 
 .star_lodging {
     margin: 5px 0 10px 10px;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .picture_lodging {
     display: block;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     height: auto;
     width: 100%
 }
@@ -113,12 +121,16 @@ section {
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
     height: auto;
     padding: 8px;
     background-color: white;
     border-radius: 30px;
     margin: 30px 0;
+}
+
+.picture_popular {
+    border-radius: 25px 0 0 25px;
 }
 
 .storage_card_popular {
@@ -129,7 +141,7 @@ section {
 }
 
 .center {
-    margin-left: 10%;
+    margin-left: 7%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -168,6 +180,7 @@ section {
 .storage_card_activity {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .activity_container {
@@ -178,16 +191,14 @@ section {
 
 .picture_activity {
     object-fit: cover;
-    height: 325px;
+    height: 300px;
     border-radius: 25px 25px 0 0;
 }
 
 .activity_container_superimpose {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: row;
+    width: 96%;
 }
 
 .activity_card {
@@ -201,12 +212,19 @@ section {
 }
 
 .activity_name {
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .title_activity h3 {
     font-size: 3vw;
     margin: 0 0 10%;
+}
+
+.height_card_medium {
+    margin: 3%;
+}
+.height_card_big {
+    margin: 3%;
 }
 
 
